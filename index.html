@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jahana Sherin K.J — Software Engineer & QA Professional. MCA Graduate. Software Testing, Full-Stack Development, Cloud Deployment." />
+  <meta name="keywords"
+    content="Software Testing, QA Engineer, Python, MCA, Portfolio, Thrissur Kerala, Selenium, FastAPI, Docker" />
+  <meta name="author" content="Jahana Sherin K.J" />
+  <meta property="og:title" content="Jahana Sherin K.J — Software Engineer & QA" />
+  <meta property="og:description"
+    content="Software Testing · Full-Stack Development · Cloud Deployment · MCA Graduate 2026" />
+  <meta property="og:type" content="website" />
+  <title>Jahana Sherin K.J — Software Engineer &amp; QA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23050508'/><text x='7' y='22' font-size='15' fill='%2300F5FF' font-family='monospace' font-weight='700'>J.</text></svg>" />
+</head>
+
+<body>
+
+  <!-- BACKGROUND CANVAS (binary dot-grid) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="progress-bar"></div>
+
+  <!-- ══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="#hero" class="nav-logo" aria-label="Home">
+      JSK<span class="dot">.</span>
+    </a>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#internship" class="nav-link">Internship</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact-section" class="nav-link">Contact</a></li>
+     
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <rect class="bar bar-1" x="2" y="5" width="18" height="1.8" rx="1" fill="currentColor" />
+        <rect class="bar bar-2" x="2" y="10" width="18" height="1.8" rx="1" fill="currentColor" />
+        <rect class="bar bar-3" x="2" y="15" width="18" height="1.8" rx="1" fill="currentColor" />
+      </svg>
+    </button>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+    <section id="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-layout">
+
+          <div class="hero-left">
+            <!-- Availability pill -->
+            <div class="hero-pill" id="hero-availability-badge">
+              <span class="pulse-dot"></span>
+              Available for Opportunities &nbsp;·&nbsp; Open to Relocate
+            </div>
+
+            <h1 class="hero-name">
+              Jahana<br>Sherin <span class="name-accent">K.J</span>
+            </h1>
+
+            <p class="hero-role">Software Developer &nbsp;&amp;&nbsp; QA Tester</p>
+
+            <p class="hero-bio">
+              Results-driven Software Developer and QA Tester with an MCA degree and hands-on
+              internship experience building real-world web applications and intelligence dashboards.
+              Proficient in Python, Django, Flask, SQL, and frontend technologies, with solid
+              expertise in manual testing methodologies including regression, functional, smoke,
+              and UAT testing.
+            </p>
+
+            <!-- Three CTA Buttons -->
+            <div class="hero-cta-row">
+              <!-- View CV — glassmorphism -->
+              <a href="jahana_resume.pdf" target="_blank" class="btn-view-cv" id="hero-view-cv">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View CV
+              </a>
+              <!-- Download CV — indigo gradient -->
+              <a href="jahana_resume.pdf" class="btn-download-cv" id="hero-download-cv" download="JAHANA_1.pdf">
+                Download CV
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/jahana-sherin-kj-ba1442281" target="_blank" rel="noopener noreferrer"
+                class="btn-linkedin" id="hero-linkedin" aria-label="Jahana's LinkedIn Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+
+            <!-- Stat chips row -->
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="stat-n">4+</span>
+                <span class="stat-l">Projects</span>
+              </div>
+              <div class="stat-div"></div>
+              <div class="hero-stat">
+                <span class="stat-n">20+</span>
+                <span class="stat-l">Skills</span>
+              </div>
+              <div class="stat-div"></div>
+              <div class="hero-stat">
+                <span class="stat-n">3</span>
+                <span class="stat-l">Certs</span>
+              </div>
+              <div class="stat-div"></div>
+              <div class="hero-stat">
+                <span class="stat-n">2</span>
+                <span class="stat-l">Degrees</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Particle Orb — Right Side -->
+          <div class="hero-right" id="hero-right">
+            <!-- Glassmorphism orb container -->
+            <div class="orb-glass-wrap" id="orb-glass-wrap" aria-hidden="true">
+              <canvas id="orb-canvas"></canvas>
+              <!-- Inner decorative ring labels -->
+              <div class="orb-label orb-label-top">AI · DEVELOPER</div>
+              <div class="orb-label orb-label-bottom">QA · TESTER</div>
+            </div>
+            <!-- Floating speaker badge -->
+            <div class="orb-speaker-badge" id="orb-speaker-badge" role="button"
+              aria-label="Toggle speaker profile reading">
+              <span class="orb-speaker-dot"></span>
+              <span class="orb-speaker-text">SPEAKER OFF</span>
+              <div class="orb-mini-wave" aria-hidden="true">
+                <span style="--d:0s"></span>
+                <span style="--d:.1s"></span>
+                <span style="--d:.2s"></span>
+                <span style="--d:.3s"></span>
+                <span style="--d:.4s"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       PROFESSIONAL SUMMARY
+  ═══════════════════════════════════════════════ -->
+    <section id="summary" aria-label="Professional Summary">
+      <div class="container">
+        <div class="summary-card reveal">
+          <div class="card-eyebrow">About</div>
+          <p class="summary-text">
+            Detail-oriented <strong>MCA graduate (May 2026)</strong> experienced in
+            <strong>Software Testing (Manual &amp; Automation)</strong>,
+            <strong>Full-Stack Development</strong>, and
+            <strong>Cloud Deployment</strong>. Adept at modern engineering workflows
+            from development to QA — spanning spec-driven development, containerization,
+            and intelligent test strategy design with a strong analytical mindset.
+          </p>
+          <div class="tag-row">
+            <span class="tag tag-hi">MCA · May 2026</span>
+            <span class="tag">Software Testing &amp; QA</span>
+            <span class="tag">Full-Stack Development</span>
+            <span class="tag">Docker · Azure</span>
+            <span class="tag">Thrissur, Kerala</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       INTERNSHIP + VIDEO DEMOS
+  ═══════════════════════════════════════════════ -->
+    <section id="internship" aria-label="Internship Experience">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-tag">Experience</span>
+          <h2 class="sec-title">Real Rails Internship</h2>
+          <p class="sec-sub">Real Rails Internship Program &nbsp;·&nbsp; Infocreon Solutions &nbsp;·&nbsp; 2025</p>
+        </div>
+
+        <!-- Internship overview card -->
+        <div class="internship-overview reveal reveal-d1">
+          <div class="intern-left">
+            <div class="org-badge">
+              <div class="org-badge-icon">🏢</div>
+              <div>
+                <div class="org-n">Infocreon Solutions</div>
+                <div class="org-p">Real Rails Internship Program</div>
+              </div>
+              <span class="status-pill">Completed</span>
+            </div>
+            <p class="intern-desc">
+              Hands-on exposure to production-grade full-stack engineering — building data-intensive
+              dashboards using Next.js, TypeScript, and FastAPI; containerizing apps with Docker;
+              deploying to Azure Container Apps; and exploring Agentic AI integration patterns.
+            </p>
+            <div class="tag-row">
+              <span class="tag tag-hi">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Agentic AI</span>
+            </div>
+          </div>
+
+          <div class="intern-right">
+            <ul class="exp-list">
+              <li class="exp-item"><span class="exp-n">01</span>
+                <div><b>Spec-Driven Development</b>
+                  <p>Designing software aligned to precise technical specifications and requirement docs</p>
+                </div>
+              </li>
+              <li class="exp-item"><span class="exp-n">02</span>
+                <div><b>Docker Containerization</b>
+                  <p>Building containerized apps for consistent, reproducible production environments</p>
+                </div>
+              </li>
+              <li class="exp-item"><span class="exp-n">03</span>
+                <div><b>Azure Container Apps</b>
+                  <p>Production cloud deployment on Microsoft Azure — scalable, serverless containers</p>
+                </div>
+              </li>
+              <li class="exp-item"><span class="exp-n">04</span>
+                <div><b>Agentic AI Concepts</b>
+                  <p>LLM integration pipelines and intelligent workflow orchestration patterns</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video Mockups -->
+        <div class="video-demos-label reveal">Live Project Demos — Built During Internship</div>
+        <div class="video-demos-grid">
+
+          <!-- POC #43: Cookie Tracker -->
+          <div class="video-demo-card reveal reveal-d1" id="demo-cookie">
+            <div class="demo-card-meta">
+              <span class="demo-num">POC #43</span>
+              <span class="demo-live-badge">
+                <span class="live-dot"></span>Live
+              </span>
+            </div>
+            <h3 class="demo-title">Cookie Tracker Graph</h3>
+            <p class="demo-desc">Real-time cookie analytics visualization dashboard with live data graphs and tracking
+              metrics.</p>
+
+            <div class="browser-mockup browser-red" id="mockup-cookie">
+              <div class="browser-bar">
+                <div class="browser-dots">
+                  <span class="bd bd-r"></span>
+                  <span class="bd bd-y"></span>
+                  <span class="bd bd-g"></span>
+                </div>
+                <div class="browser-url-bar">
+                  <span class="url-lock">🔒</span>
+                  <span class="url-text">cookie-tracker-frontend.onrender.com</span>
+                </div>
+                <a href="https://cookie-tracker-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open-btn" aria-label="Open site in new tab">↗</a>
+              </div>
+              <div class="browser-viewport">
+                <iframe src="https://cookie-tracker-frontend.onrender.com/" title="Cookie Tracker Graph — Live Demo"
+                  loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" scrolling="no"
+                  id="iframe-cookie"></iframe>
+                <div class="iframe-overlay" id="overlay-cookie">
+                  <div class="iframe-fallback">
+                    <div class="fb-icon">📊</div>
+                    <div class="fb-title">Cookie Tracker Graph</div>
+                    <div class="fb-sub">Live site may take a moment to wake up (Render free tier)</div>
+                    <a href="https://cookie-tracker-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                      class="fb-link">
+                      Open Live Site ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-footer">
+              <span class="demo-stack">Next.js · TypeScript · FastAPI · Tailwind CSS</span>
+              <a href="https://cookie-tracker-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="demo-visit-btn" id="visit-cookie">
+                Visit Live ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- POC #55: Data Exhaust -->
+          <div class="video-demo-card reveal reveal-d2" id="demo-exhaust">
+            <div class="demo-card-meta">
+              <span class="demo-num">POC #55</span>
+              <span class="demo-live-badge">
+                <span class="live-dot"></span>Live
+              </span>
+            </div>
+            <h3 class="demo-title">Data Exhaust Dashboard</h3>
+            <p class="demo-desc">Comprehensive data pipeline monitoring dashboard for tracking data flow metrics and
+              exhaust analysis.</p>
+
+            <div class="browser-mockup browser-cyan" id="mockup-exhaust">
+              <div class="browser-bar">
+                <div class="browser-dots">
+                  <span class="bd bd-r"></span>
+                  <span class="bd bd-y"></span>
+                  <span class="bd bd-g"></span>
+                </div>
+                <div class="browser-url-bar">
+                  <span class="url-lock">🔒</span>
+                  <span class="url-text">12-nu-lovat.vercel.app</span>
+                </div>
+                <a href="https://12-nu-lovat.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open-btn" aria-label="Open site in new tab">↗</a>
+              </div>
+              <div class="browser-viewport">
+                <iframe src="https://12-nu-lovat.vercel.app/" title="Data Exhaust Dashboard — Live Demo" loading="lazy"
+                  sandbox="allow-scripts allow-same-origin allow-popups" scrolling="no" id="iframe-exhaust"></iframe>
+                <div class="iframe-overlay" id="overlay-exhaust">
+                  <div class="iframe-fallback">
+                    <div class="fb-icon">📈</div>
+                    <div class="fb-title">Data Exhaust Dashboard</div>
+                    <div class="fb-sub">Click to load the live dashboard</div>
+                    <a href="https://12-nu-lovat.vercel.app/" target="_blank" rel="noopener noreferrer" class="fb-link">
+                      Open Live Site ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-footer">
+              <span class="demo-stack">Next.js · TypeScript · FastAPI · Data Visualization</span>
+              <a href="https://12-nu-lovat.vercel.app/" target="_blank" rel="noopener noreferrer" class="demo-visit-btn"
+                id="visit-exhaust">
+                Visit Live ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       SKILLS — FLAT BENTO TAGS
+  ═══════════════════════════════════════════════ -->
+    <section id="skills" aria-label="Technical Skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-tag">Skills</span>
+          <h2 class="sec-title">Technical Arsenal</h2>
+        </div>
+
+        <div class="skills-bento">
+
+          <div class="skill-panel reveal reveal-d1" id="skill-prog">
+            <div class="skill-panel-head">
+              <span class="sp-icon">⚡</span>
+              <span class="sp-title">Core Programming &amp; Web</span>
+            </div>
+            <div class="skill-tags">
+              <span class="sk">Python</span>
+              <span class="sk">JavaScript (ES6+)</span>
+              <span class="sk">TypeScript</span>
+              <span class="sk">Next.js</span>
+              <span class="sk">Tailwind CSS</span>
+              <span class="sk">SQL</span>
+              <span class="sk">HTML5</span>
+              <span class="sk">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal reveal-d2" id="skill-back">
+            <div class="skill-panel-head">
+              <span class="sp-icon">🗄</span>
+              <span class="sp-title">Backend &amp; Databases</span>
+            </div>
+            <div class="skill-tags">
+              <span class="sk">FastAPI</span>
+              <span class="sk">Django</span>
+              <span class="sk">Flask</span>
+              <span class="sk">MySQL</span>
+              <span class="sk">SQLite</span>
+              <span class="sk">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- QA Knowledge panel — spans full width in second row -->
+          <div class="skill-panel skill-panel-qa reveal reveal-d3" id="skill-qa">
+            <div class="skill-panel-head">
+              <span class="sp-icon">🔬</span>
+              <span class="sp-title">QA &amp; Automation</span>
+            </div>
+            <div class="qa-two-col">
+              <div class="qa-col">
+                <div class="qa-subhead">Automation &amp; Tools</div>
+                <div class="skill-tags">
+                  <span class="sk">Selenium (Basic)</span>
+                  <span class="sk">Manual Testing</span>
+                  <span class="sk">Functional Testing</span>
+                  <span class="sk">Regression Testing</span>
+                </div>
+              </div>
+              <div class="qa-col">
+                <div class="qa-subhead">Methodology &amp; Process</div>
+                <div class="skill-tags">
+                  <span class="sk">Test Case Design</span>
+                  <span class="sk">Defect Reporting</span>
+                  <span class="sk">SDLC / STLC</span>
+                  <span class="sk">Smoke Testing</span>
+                  <span class="sk">UAT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal reveal-d1" id="skill-tools">
+            <div class="skill-panel-head">
+              <span class="sp-icon">🛠</span>
+              <span class="sp-title">Dev &amp; DevOps</span>
+            </div>
+            <div class="skill-tags">
+              <span class="sk">Git</span>
+              <span class="sk">GitHub</span>
+              <span class="sk">Docker</span>
+              <span class="sk">VS Code</span>
+              <span class="sk">Azure Container Apps</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════════ -->
+    <section id="projects" aria-label="Portfolio Projects">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-tag">Work</span>
+          <h2 class="sec-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- P1 DoS Mitigation -->
+          <article class="proj-card accent-cyan reveal reveal-d1" id="project-dos">
+            <div class="proj-top">
+              <span class="proj-num">01</span>
+              <a href="https://github.com/jsherin799-tech/FULL-STACK-EDGE-BASED-DOS-MITIGATION-REAL-TIME-ALERT-SYSTEM"
+                class="gh-btn" target="_blank" rel="noopener noreferrer" id="proj1-github"
+                aria-label="View DoS Mitigation on GitHub">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                GitHub Code ↗
+              </a>
+            </div>
+            <h3 class="proj-title">Full-Stack Edge-Based DoS Mitigation System</h3>
+            <p class="proj-desc">Intelligent network security using SVM &amp; Logistic Regression ML classifiers to
+              detect and mitigate DoS attacks at the edge layer with real-time traffic analysis and alert system.</p>
+            <div class="proj-tags">
+              <span class="sk">Python</span><span class="sk">SVM</span><span class="sk">Logistic Regression</span><span
+                class="sk">Flask</span><span class="sk">ML Pipeline</span><span class="sk">Real-Time Alerts</span>
+            </div>
+          </article>
+
+          <!-- P2 AI Copilot -->
+          <article class="proj-card accent-purple reveal reveal-d2" id="project-ai">
+            <div class="proj-top">
+              <span class="proj-num">02</span>
+              <a href="https://github.com/jsherin799-tech/Ai-copilot-with-chrome-extension-" class="gh-btn"
+                target="_blank" rel="noopener noreferrer" id="proj2-github" aria-label="View AI Copilot on GitHub">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                GitHub Code ↗
+              </a>
+            </div>
+            <h3 class="proj-title">AI Copilot Chrome Extension</h3>
+            <p class="proj-desc">Browser-native AI assistant built as a Chrome Extension — context-aware responses via
+              REST API integration with React.js reactive UI across any webpage.</p>
+            <div class="proj-tags">
+              <span class="sk">React.js</span><span class="sk">JavaScript</span><span class="sk">REST APIs</span><span
+                class="sk">Chrome Extension API</span><span class="sk">AI Integration</span>
+            </div>
+          </article>
+
+          <!-- P3 POC - already in internship section, brief card -->
+          <article class="proj-card reveal reveal-d3" id="project-poc">
+            <div class="proj-top">
+              <span class="proj-num">03</span>
+              <div class="poc-pills">
+                <span class="poc-p">POC #43</span><span class="poc-p">POC #55</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Cookie Tracker Graph &amp; Data Exhaust Dashboard</h3>
+            <p class="proj-desc">Two production POC dashboards built during the Real Rails Internship — real-time cookie
+              analytics and comprehensive data pipeline engineering. Both deployed live.</p>
+            <div class="proj-tags">
+              <span class="sk">Next.js</span><span class="sk">TypeScript</span><span class="sk">FastAPI</span><span
+                class="sk">Tailwind CSS</span><span class="sk">Data Visualization</span>
+            </div>
+            <div class="proj-live-row">
+              <a href="https://cookie-tracker-frontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="live-link" id="proj3-live1">cookie-tracker ↗</a>
+              <a href="https://12-nu-lovat.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link"
+                id="proj3-live2">data-exhaust ↗</a>
+            </div>
+          </article>
+
+          <!-- P4 Orphanage -->
+          <article class="proj-card reveal reveal-d4" id="project-orphanage">
+            <div class="proj-top">
+              <span class="proj-num">04</span>
+              <a href="#" class="gh-btn-dim" id="proj4-github" aria-label="GitHub">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                GitHub →
+              </a>
+            </div>
+            <h3 class="proj-title">Orphanage Management System</h3>
+            <p class="proj-desc">Full-stack Django web application for comprehensive orphanage operations — resident
+              records, staff management, donations tracking, and reporting with MySQL database.</p>
+            <div class="proj-tags">
+              <span class="sk">Python Django</span><span class="sk">MySQL</span><span class="sk">HTML5</span><span
+                class="sk">CSS3</span><span class="sk">JavaScript</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       EDUCATION & CERTIFICATIONS
+  ═══════════════════════════════════════════════ -->
+    <section id="education" aria-label="Education and Certifications">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-tag">Background</span>
+          <h2 class="sec-title">Education &amp; Certifications</h2>
+        </div>
+
+        <div class="edu-bento">
+
+          <div class="edu-panel reveal reveal-d1">
+            <div class="panel-head">Academic</div>
+
+            <div class="edu-row" id="edu-mca">
+              <div class="degree-badge cyan-badge">MCA</div>
+              <div class="edu-info">
+                <div class="edu-title">Master of Computer Applications</div>
+                <div class="edu-college">Nehru College of Engineering &amp; Research Centre</div>
+                <div class="edu-period">2024 – 2026 &nbsp;<span class="status-green">· Graduating May 2026</span></div>
+                <div class="edu-subjects">Software Testing · Advanced Python · Cloud Computing · Database Systems</div>
+              </div>
+            </div>
+
+            <div class="edu-row" id="edu-bca">
+              <div class="degree-badge purple-badge">BCA</div>
+              <div class="edu-info">
+                <div class="edu-title">Bachelor of Computer Applications</div>
+                <div class="edu-college">Elims College of Arts and Science</div>
+                <div class="edu-period">2021 – 2024 &nbsp;<span class="status-done">· Completed</span></div>
+                <div class="edu-subjects">Core Programming · Web Development · Data Structures</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-panel reveal reveal-d2">
+            <div class="panel-head">Certifications</div>
+
+            <div class="cert-row" id="cert-nptel">
+              <div class="cert-box cert-cyan">☁️</div>
+              <div>
+                <div class="cert-n">NPTEL Cloud Computing</div>
+                <div class="cert-by">National Programme on Technology Enhanced Learning · IIT</div>
+              </div>
+            </div>
+            <div class="cert-row" id="cert-rhyphira">
+              <div class="cert-box cert-purple">🐍</div>
+              <div>
+                <div class="cert-n">Python Django Development</div>
+                <div class="cert-by">Rhyphira Tech · Full-Stack Web Development Program</div>
+              </div>
+            </div>
+            <div class="cert-row" id="cert-nectar">
+              <div class="cert-box cert-gold">📄</div>
+              <div>
+                <div class="cert-n">NECTAR Research Publication</div>
+                <div class="cert-by">Published Research · Nehru College Academic Journal</div>
+              </div>
+            </div>
+
+            <div class="stats-row">
+              <div class="stat-b"><span class="sbn">4+</span><span class="sbl">Projects</span></div>
+              <div class="stat-b"><span class="sbn">3</span><span class="sbl">Certs</span></div>
+              <div class="stat-b"><span class="sbn">20+</span><span class="sbl">Skills</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+       CONTACT & SOFT SKILLS
+  ═══════════════════════════════════════════════ -->
+    <section id="contact-section" aria-label="Contact">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-tag">Connect</span>
+          <h2 class="sec-title">Let's Talk</h2>
+        </div>
+
+        <div class="contact-bento">
+
+          <div class="soft-panel reveal reveal-d1" id="soft-skills-panel">
+            <div class="panel-head">Soft Skills</div>
+            <div class="soft-tag-row">
+              <span class="soft-t" id="skill-teamwork">🤝 Teamwork</span>
+              <span class="soft-t" id="skill-critical">🧠 Critical Thinking</span>
+              <span class="soft-t" id="skill-problem">💡 Problem Solving</span>
+              <span class="soft-t" id="skill-adapt">🔄 Adaptability</span>
+            </div>
+
+            <div class="trait-list" id="trait-bars">
+              <div class="trait-item">
+                <div class="ti-head"><span>Attention to Detail</span><span>97%</span></div>
+                <div class="ti-track">
+                  <div class="ti-fill" data-width="97%" style="background:linear-gradient(90deg,#00F5FF,#7B61FF)"></div>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="ti-head"><span>Problem Solving</span><span>92%</span></div>
+                <div class="ti-track">
+                  <div class="ti-fill" data-width="92%" style="background:linear-gradient(90deg,#7B61FF,#FF2D87)"></div>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="ti-head"><span>Team Collaboration</span><span>94%</span></div>
+                <div class="ti-track">
+                  <div class="ti-fill" data-width="94%" style="background:linear-gradient(90deg,#FF2D87,#FFD700)"></div>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="ti-head"><span>Communication</span><span>88%</span></div>
+                <div class="ti-track">
+                  <div class="ti-fill" data-width="88%" style="background:linear-gradient(90deg,#FFD700,#00F5FF)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-panel reveal reveal-d2" id="contact-hub">
+            <div class="panel-head">Contact</div>
+            <p class="contact-intro">Open to opportunities, collaborations &amp; conversations.</p>
+
+            <ul class="contact-items">
+              <li>
+                <a href="mailto:Jsherin799@gmail.com" class="contact-item" id="contact-email">
+                  <span class="ci-icon">📧</span>
+                  <div>
+                    <div class="ci-label">Email</div>
+                    <div class="ci-val">Jsherin799@gmail.com</div>
+                  </div>
+                  <span class="ci-arrow">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+918714523029" class="contact-item" id="contact-phone">
+                  <span class="ci-icon">📞</span>
+                  <div>
+                    <div class="ci-label">Phone</div>
+                    <div class="ci-val">+91 8714523029</div>
+                  </div>
+                  <span class="ci-arrow">→</span>
+                </a>
+              </li>
+              <li>
+                <div class="contact-item contact-static" id="contact-location">
+                  <span class="ci-icon">📍</span>
+                  <div>
+                    <div class="ci-label">Location</div>
+                    <div class="ci-val">Thrissur, Kerala, India</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jahana-sherin" target="_blank" rel="noopener noreferrer"
+                  class="contact-item" id="contact-linkedin">
+                  <span class="ci-icon">💼</span>
+                  <div>
+                    <div class="ci-label">LinkedIn</div>
+                    <div class="ci-val">linkedin.com/in/jahana-sherin</div>
+                  </div>
+                  <span class="ci-arrow">→</span>
+                </a>
+              </li>
+            </ul>
+
+            <p class="contact-note">✦ Typically responds within 24 hours &nbsp;·&nbsp; Open to Remote &amp; Hybrid</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-row">
+        <span class="fc">© 2026 <strong>Jahana Sherin K.J</strong> · All rights reserved</span>
+        <span class="fb">Built with ♥ · Deployed on Vercel</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
